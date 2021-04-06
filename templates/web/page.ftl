@@ -15,3 +15,4 @@ title_t:${contentModel.title_t}<br>
           ----------------------------------
         	
 	</div>
+<@studio.toolSupport/>	
