@@ -54,7 +54,7 @@
 
    <ul>
 			
-		<!--@nav.renderNavigation "/site/website", 1, true /-->
+			<@nav.renderNavigation "/site/website", 1, true />
 		       
       </ul>
       
