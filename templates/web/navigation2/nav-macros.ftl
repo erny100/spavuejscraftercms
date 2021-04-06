@@ -1,7 +1,7 @@
 <#macro renderNavItem navItem>
   <li>
   <#if navItem.url== '/'>
-    <a class="a" href="${navItem.url}">${navItem.label}</a>
+    <a class="a" href="#/home">${navItem.label}</a>
   <#else>
      <a class="a" href="#${navItem.url}">${navItem.label}</a>
   </#if>
