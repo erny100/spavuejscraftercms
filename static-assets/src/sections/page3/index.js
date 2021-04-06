@@ -3,13 +3,13 @@
  */
 
 (function(){
-    var component = Vue.component('page2', function (resolve, reject) {
-        Vue.http({url:'page2', method: 'GET'}).then(function (response) {
+    var component = Vue.component('page3', function (resolve, reject) {
+        Vue.http({url:'page3', method: 'GET'}).then(function (response) {
             resolve({
                 template: response.data,
                 data: function () {
                     return {
-                        name:'page2'
+                        name:'page3'
                     }
                 },
                 created:function(){
@@ -24,7 +24,7 @@
         });
 
     });
-    window.router.addRoutes([{ path: '/page2', component: component }])
+    window.router.addRoutes([{ path: '/page3', component: component }])
 })();
 
 
