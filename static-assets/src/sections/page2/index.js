@@ -3,13 +3,13 @@
  */
 
 (function(){
-    var component = Vue.component('page1', function (resolve, reject) {
-        Vue.http({url:locationPath+'src/sections/page1/template.html', method: 'GET'}).then(function (response) {
+    var component = Vue.component('page2', function (resolve, reject) {
+        Vue.http({url:'page2', method: 'GET'}).then(function (response) {
             resolve({
                 template: response.data,
                 data: function () {
                     return {
-                        name:'page1'
+                        name:'page2'
                     }
                 },
                 created:function(){
@@ -24,7 +24,7 @@
         });
 
     });
-    window.router.addRoutes([{ path: '/page1', component: component }])
+    window.router.addRoutes([{ path: '/page2', component: component }])
 })();
 
 
