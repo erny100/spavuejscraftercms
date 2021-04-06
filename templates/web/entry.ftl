@@ -46,7 +46,7 @@
 
 <div id="app">
     <header>
-        <!--div><span><a href="#/home">home</a> - </span><span><a href="#/page1">page1</a> - </span><span><a href="#/page2">page2</a> - </span><span><a href="#/page3">page3</a></span></div-->
+        <div><span><a href="#/page1">page1</a> </div></span>
         <div><@nav.renderNavigation "/site/website", 1, true /></div>
     </header>
     <div> 
