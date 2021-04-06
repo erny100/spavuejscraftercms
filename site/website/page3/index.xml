@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+	<content-type>/page/page</content-type>
+	<display-template>/templates/web/page.ftl</display-template>
+	<no-template-required/>
+	<merge-strategy>inherit-levels</merge-strategy>
+	<objectGroupId>25df</objectGroupId>
+	<objectId>25dfb69e-8122-9ace-c648-92091246efe4</objectId>
+	<file-name>index.xml</file-name>
+	<folder-name>page3</folder-name>
+	<internal-name>page3</internal-name>
+	<navLabel>page3</navLabel>
+	<title_t>title page3</title_t>
+	<placeInNav>true</placeInNav>
+	<orderDefault_f>3000</orderDefault_f>
+	<edit_html>&lt;p&gt;&lt;span style="background-color: #f1c40f;"&gt;&lt;strong&gt;PAGE 3&amp;nbsp;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;</edit_html>
+	<createdDate>2021-04-06T16:12:33.458Z</createdDate>
+	<createdDate_dt>2021-04-06T16:12:33.458Z</createdDate_dt>
+	<lastModifiedDate>2021-04-06T16:12:33.458Z</lastModifiedDate>
+	<lastModifiedDate_dt>2021-04-06T16:12:33.458Z</lastModifiedDate_dt>
+</page>
