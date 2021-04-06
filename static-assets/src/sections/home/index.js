@@ -14,9 +14,9 @@
     //    .fail(function( jqxhr, settings, exception ) {
     //        console.error( 'load comp1/index:', exception );
     //    });
-    $.getScript( path+"comp2/index.js" )
+    $.getScript( path+"comp1/index.js" )
         .done(function( script, textStatus ) {
-            console.log( 'comp2/index:',textStatus );
+            console.log( 'comp1/index:',textStatus );
 
 
         })
