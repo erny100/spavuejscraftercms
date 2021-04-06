@@ -3,7 +3,7 @@
  */
 
 (function(){
-    var path = "src/sections/home/";
+    var path = locationPath+"src/sections/home/";
     /// components
     //$.getScript( path+"comp1/index.js" )
     //    .done(function( script, textStatus ) {
