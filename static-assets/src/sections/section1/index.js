@@ -3,13 +3,13 @@
  */
 
 (function(){
-    var component = Vue.component('section1', function (resolve, reject) {
-        Vue.http({url:'src/sections/section1/template.html', method: 'GET'}).then(function (response) {
+    var component = Vue.component('page1', function (resolve, reject) {
+        Vue.http({url:'src/sections/page1/template.html', method: 'GET'}).then(function (response) {
             resolve({
                 template: response.data,
                 data: function () {
                     return {
-                        name:'section1'
+                        name:'page1'
                     }
                 },
                 created:function(){
@@ -24,7 +24,7 @@
         });
 
     });
-    window.router.addRoutes([{ path: '/section1', component: component }])
+    window.router.addRoutes([{ path: '/page1', component: component }])
 })();
 
 
