@@ -1,20 +1,78 @@
 <#import "/templates/system/common/cstudio-support.ftl" as studio />
+<#import "/templates/web/navigation2/navigation.ftl" as nav/>
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
       <meta charset="utf-8">
       <title>${model.title_t}</title>
-	</head>
-	<body>
-    	<div <@studio.iceAttr iceGroup="title"/>>
-			<h1>${model.title_t}</h1>
-        </div>
-      
-    	<div <@studio.iceAttr iceGroup="main"/>>
-            ${model.body_html}
-        </div>
+      <script src="static-assets/js/jquery-ajax-2.0.0.min.js"></script>
+      <script src="static-assets/js/vue.js"></script>
+      <script src="static-assets/js/vue-router.js"></script>
+    <script src="static-assets/js/vue-resource.min.js"></script>
 
-		<@studio.toolSupport/>	
-	</body>
+    <script type="application/javascript" src="static-assets/src/app.js"></script>
+    <style>
+        .component{
+            border: 1px solid cadetblue;
+            width: 200px;
+            height: 200px;
+        }
+        .section{
+            border: 1px solid #d3d3d3;
+
+        }
+        .fade-enter-active, .fade-leave-active {
+            transition-property: opacity;
+            transition-duration: .25s;
+        }
+
+        .fade-enter-active {
+            transition-delay: .25s;
+        }
+
+        .fade-enter, .fade-leave-active {
+            opacity: 0
+        }
+    </style>
+	</head>
+	
+	
+	<body>
+
+<div id="app">
+    <header>
+        <div><span><a href="#/home">home</a> - </span><span><a href="#/section1">section1</a> - </span><span><a href="#/section2">section2</a> - </span><span><a href="#/section3">section3</a>- </span><span><a href="#/section4">section4</a></span></div>
+    </header>
+    <div> 
+    
+	
+
+   <ul>
+			
+		<!--@nav.renderNavigation "/site/website", 1, true /-->
+		       
+      </ul>
+      
+     
+    
+    </div>
+    <transition name="fade" >
+        <keep-alive>
+            <router-view ></router-view>
+        </keep-alive>
+    </transition>
+    <footer>
+
+    </footer>
+
+</div>
+	<@studio.toolSupport/>	
+</body>
 </html>
+</html>
+
