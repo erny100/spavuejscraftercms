@@ -5,6 +5,7 @@
 var locationPath="static-assets/"
 window.addEventListener("load", startApp);
 
+var locationPath="static-assets/"
 
 function startApp(){
 
@@ -50,7 +51,7 @@ function startApp(){
         if(to.matched.length==0 && to.path != "/"){
             console.log('***** 1 start load module:from:',from.path,'to:',to.path)
 
-            $.getScript( "src/sections"+to.path+"/index.js" )
+            $.getScript( locationPath+"src/sections"+to.path+"/index.js" )
                 .done(function( script, textStatus ) {
                     console.log( '**** 2 end load module:',to.path,textStatus );
                    // next()
