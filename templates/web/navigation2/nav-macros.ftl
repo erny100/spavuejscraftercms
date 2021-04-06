@@ -1,12 +1,14 @@
 <#macro renderNavItem navItem>
-  <li>
+ 
   <#if navItem.url== '/'>
-    <a class="a" href="#/home">${navItem.label}</a>
+    
+    <span><a href="#/home">${navItem.label}</a> - </span>
   <#else>
-     <a class="a" href="#${navItem.url}">${navItem.label}</a>
+     
+     <span><a href="#${navItem.url}">${navItem.label}</a> - </span>
   </#if>
    
-  </li>
+ 
 </#macro>
 
 <#macro renderRootItem navItem>
