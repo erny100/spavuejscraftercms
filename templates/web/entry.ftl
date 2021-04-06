@@ -46,7 +46,7 @@
 
 <div id="app">
     <header>
-        <div><span><a href="#/home">home</a> - </span><span><a href="#/section1">section1</a> - </span><span><a href="#/section2">section2</a> - </span><span><a href="#/section3">section3</a>- </span><span><a href="#/section4">section4</a></span></div>
+        <div><span><a href="#/home">home</a> - </span><span><a href="#/page1">page1</a> - </span><span><a href="#/section2">section2</a> - </span><span><a href="#/section3">section3</a>- </span><span><a href="#/section4">section4</a></span></div>
     </header>
     <div> 
     
