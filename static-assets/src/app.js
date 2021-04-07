@@ -2,11 +2,13 @@
  * Created by Ernesto  on 09/06/2017.
  */
  // @flowa
-var locationPath="static-assets/"
+const locationPath="static-assets/"
 window.addEventListener("load", startApp);
 
-var locationPath="static-assets/"
-
+const _removeScriptTag_ = function (string){
+    const regex = /<script(.*?)<\/script>/g;
+    return string.replace(regex, '')
+}
 function startApp(){
 
 
