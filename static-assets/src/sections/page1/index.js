@@ -6,7 +6,7 @@
     var component = Vue.component('page1', function (resolve, reject) {
         Vue.http({url:locationPath+'src/sections/page1/template.html', method: 'GET'}).then(function (response) {
             resolve({
-                template: response.data,
+                template:  _removeScriptTag_(response.data),
                 data: function () {
                     return {
                         name:'page1'
